@@ -140,8 +140,9 @@ select {
         margin: auto;
     }
 
-    .interface {
+     .interface {
         width: 100%;
+        margin: auto;
     }
     
     #numero-antes, #numero-depois {
@@ -150,7 +151,8 @@ select {
     }
 
     select {
-        width: 9em;
+        width: 10em;
         font-size: 15px;
+        margin: 0 1em
     }
 }
