@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor de Bases Numéricas</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <h1>Conversor de Bases Numéricas</h1>
-        <p>Digite o valor e escolha as bases!</p>
+      <h1>Conversor de Bases Numéricas</h1>
+      <p>Digite o valor e escolha as bases!</p>
 
-        <div class="interface">
-            <section class='entrada'>
-                <input type="text" name="numero-antes" id="numero-antes" value=""/>
-                <section class="bases">
-                    <select name="opcoes-bases" id="opcoes-bases-entrada">
-                        <option value="">Bases numéricas</option>
-                        <option value="dec">Decimal</option>
-                        <option value="bin">Binário</option>
-                        <option value="oct">Octal</option>
-                        <option value="hex">Hexadecimal</option>
-                    </select>
-                    <p class="seta">&rarr;</p>
-                    <select name="opcoes-bases" id="opcoes-bases-saida">
-                        <option value="">Bases numéricas</option>
-                        <option value="Dec">Decimal</option>
-                        <option value="Bin">Binário</option>
-                        <option value="Oct">Octal</option>
-                        <option value="Hex">Hexadecimal</option>
-                    </select>
-                </section>
-            </section>
+      <div class="interface">
+        <section class="entrada">
+          <input type="text" name="numero-antes" id="numero-antes" value="" />
+          <section class="bases">
+            <select name="opcoes-bases" id="opcoes-bases-entrada">
+              <option value="">Bases numéricas</option>
+              <option value="dec">Decimal</option>
+              <option value="bin">Binário</option>
+              <option value="oct">Octal</option>
+              <option value="hex">Hexadecimal</option>
+            </select>
+            <p class="seta">&rarr;</p>
+            <select name="opcoes-bases" id="opcoes-bases-saida">
+              <option value="">Bases numéricas</option>
+              <option value="Dec">Decimal</option>
+              <option value="Bin">Binário</option>
+              <option value="Oct">Octal</option>
+              <option value="Hex">Hexadecimal</option>
+            </select>
+          </section>
+        </section>
 
-            <section class="saida">
-                <input type="text" name="numero-depois" id="numero-depois" readonly="true" value="" />                
-            </section>
+        <section class="saida">
+          <div id="numero-depois"></div>
+        </section>
 
-            <div class="button">
-                <button id='converter'>Converter!</button>
-            </div>
+        <div class="button">
+          <button id="converter">Converter!</button>
         </div>
-        
-
-
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
